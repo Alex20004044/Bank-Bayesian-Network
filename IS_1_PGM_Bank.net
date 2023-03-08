@@ -1,0 +1,251 @@
+net
+{
+	recoveryenginegenerator6944530267470113528l.team = __Map__;
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@79d78c70";
+	jenginegenerator6060830225489488864L = "edu.ucla.belief.inference.JoinTreeSettings@11a753bf";
+	huginenginegenerator3061656038650325130L = "edu.ucla.belief.inference.JoinTreeSettings@20b155a5";
+	zcenginegenerator6314619632174047614L = "edu.ucla.belief.inference.JoinTreeSettings@153788b5";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@5046226f";
+	node_size = (130.0 55.0);
+	rcenginegenerator1317510038576835557L = "edu.ucla.belief.inference.RCSettings@7bd7b973";
+}
+
+node CriminalRecord
+{
+	states = ("Lawful" "Violator" );
+	position = (207 -390);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	label = "Criminal Record";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+}
+node Education
+{
+	states = ("Good" "Bad" );
+	position = (899 -161);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	label = "Education";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable2";
+}
+node Reliability
+{
+	states = ("Reliable" "Unreliable" );
+	position = (414 -504);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Reliability";
+	DSLxPOSITIONxWIDTH = "70";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Reliability";
+}
+node Assets
+{
+	states = ("High" "Low" );
+	position = (739 -393);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Assets";
+	DSLxPOSITIONxWIDTH = "70";
+	EXCLUDE_FROM_SENSITIVITY = "";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Worth";
+}
+node Age
+{
+	states = ("Young" "Old" );
+	position = (404 -263);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Age";
+	DSLxPOSITIONxWIDTH = "70";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Age";
+}
+node FutureIncome
+{
+	states = ("Promising" "NotPromising" );
+	position = (853 -506);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Future Income";
+	DSLxPOSITIONxWIDTH = "90";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "FutureIncome";
+}
+node DebtIncomeRatio
+{
+	states = ("Good" "Bad" );
+	position = (634 -261);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Ratio of Debts To Income";
+	DSLxPOSITIONxWIDTH = "81";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "RatioDebInc";
+}
+node CreditWorthiness
+{
+	states = ("Positive" "Negative" );
+	position = (637 -633);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Credit Worthiness";
+	DSLxPOSITIONxWIDTH = "100";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "CreditWorthiness";
+}
+node PaymentHistory
+{
+	states = ("Good" "Bad" );
+	position = (542 -387);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Payment History";
+	DSLxPOSITIONxWIDTH = "93";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "PaymentHistory";
+}
+node Income
+{
+	states = ("High" "Low" );
+	position = (895 -262);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Income";
+	DSLxPOSITIONxWIDTH = "83";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Profession";
+}
+node IsHasDualCitizenship
+{
+	states = ("OneCitizenship" "DualCitizenship" );
+	position = (1094 -522);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	label = "Is Has Dual Citizenship";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable0";
+}
+potential ( CriminalRecord | )
+{
+	data = (	0.9	0.1	);
+}
+potential ( Education | )
+{
+	data = (	0.3	0.7	);
+}
+potential ( Reliability | PaymentHistory Age CriminalRecord )
+{
+	data = ((((	0.7	0.3	)
+		(	0.6	0.4	))
+		((	0.9	0.1	)
+		(	0.8	0.2	)))
+		(((	0.6	0.4	)
+		(	0.5	0.5	))
+		((	0.7	0.3	)
+		(	0.6	0.4	))));
+}
+potential ( Assets | Income )
+{
+	data = ((	0.9	0.1	)
+		(	0.2	0.8	));
+}
+potential ( Age | )
+{
+	data = (	0.6	0.4	);
+}
+potential ( FutureIncome | Income Assets )
+{
+	data = (((	0.95	0.05	)
+		(	0.9	0.1	))
+		((	0.7	0.3	)
+		(	0.3	0.7	)));
+}
+potential ( DebtIncomeRatio | )
+{
+	data = (	0.4	0.6	);
+}
+potential ( CreditWorthiness | Reliability FutureIncome DebtIncomeRatio IsHasDualCitizenship )
+{
+	data = (((((	0.99	0.01	)
+		(	0.98	0.02	))
+		((	0.9	0.1	)
+		(	0.85	0.15	)))
+		(((	0.4	0.6	)
+		(	0.35	0.65	))
+		((	0.3	0.7	)
+		(	0.25	0.75	))))
+		((((	0.75	0.25	)
+		(	0.64	0.36	))
+		((	0.3	0.7	)
+		(	0.25	0.75	)))
+		(((	0.5	0.5	)
+		(	0.5	0.5	))
+		((	0.01	0.99	)
+		(	0.005	0.995	)))));
+}
+potential ( PaymentHistory | Age DebtIncomeRatio )
+{
+	data = (((	0.8	0.2	)
+		(	0.6	0.4	))
+		((	0.95	0.05	)
+		(	0.7	0.3	)));
+}
+potential ( Income | Education )
+{
+	data = ((	0.4	0.6	)
+		(	0.2	0.8	));
+}
+potential ( IsHasDualCitizenship | )
+{
+	data = (	0.95	0.05	);
+}
